@@ -162,7 +162,7 @@ I'm a **Bachelor's degree holder in Computer Science** with a passion for buildi
 - Continuously improve website performance, accessibility, and conversion-focused user experience
 
 ### **IT & Software Developer** (On-The-Job Training)  
-**Offshore Staffing Company**  
+**Dunbrae Subic Inc.**  
 *February 2025 - May 2025*
 - Developed and deployed a secure autofill system using advanced algorithms and data structures
 - Enhanced functionality and built intuitive UIs with improved user experience
