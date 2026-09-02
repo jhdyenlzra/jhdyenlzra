@@ -84,7 +84,7 @@ I'm a **Bachelor's degree holder in Computer Science** with a passion for buildi
 ### 🏢 RIOT Workspace (2025-2026) - **Internal Project**
 **Company Portal & Timekeeping System (Internal Use Only)**
 - **Description:** A comprehensive internal portal serving as the timekeeping system while displaying employee details, salaries, and related organizational information.
-- **Tech Stack:** React.js (Client), Node.js (Server), MongoDB, Express.js
+- **Tech Stack:** React.js (Client), Node.js (Server), MySQL, Express.js
 - **Key Features:**
   - Employee timekeeping system (Time In, Break, Time Out)
   - Employee details and salary information dashboard
