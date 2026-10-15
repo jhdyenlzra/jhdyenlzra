@@ -9,7 +9,7 @@
 
 ## 🎯 About Me
 
-I'm a **Bachelor's degree holder in Computer Science** with a passion for building innovative solutions that solve real-world problems. With a unique blend of **software development expertise** and **graphic design creativity**, I bring a fresh perspective to frontend development and UI/UX design. Currently working as a **Full Stack Developer & Tech Support Specialist** at RIOT Staffing, I'm eager to contribute cutting-edge solutions and drive meaningful impact in the tech industry.
+I'm a **Bachelor's degree holder in Computer Science** with a passion for building innovative solutions that solve real-world problems. With a unique blend of **software development expertise** and design sensibility, I create applications that are both robust and user-friendly.
 
 ---
 
@@ -63,6 +63,47 @@ I'm a **Bachelor's degree holder in Computer Science** with a passion for buildi
 ---
 
 ## 🚀 Featured Projects
+
+### 📱 Inspect Drop (2026) – Current Project
+Offline-First Digital Inspection App for Fieldwork
+
+- **Description:** A mobile- and tablet-first web app that replaces paper inspection sheets. Inspectors fill in a checklist on site, review their answers, and submit to get the official PDF form filled in. The PDF can be emailed to approved recipients and saved to a cloud database. Built to be delivered to RIOT’s clients.
+- **Tech Stack:** React 19, TypeScript, Vite, TanStack Router / Query / Form, Zod, Tailwind CSS, pdf-lib, pdf.js, Supabase, Resend, Vercel serverless functions, vite-plugin-pwa, Vitest, Oxlint
+- **Key Features:**
+  - Two inspection sheets, the Machinery (reefer) PTI form and the Generator Set PTI form, picked from a landing screen and built to take more forms later
+  - Large touch-friendly OK / Work toggles, a live progress tracker, and validation of required answers
+  - Reading fields with units, warnings for out-of-range values, and a signature pad
+  - Results table that shows every answer before submission, with missing items highlighted
+  - Original PDF forms filled in on the device with pdf-lib, with no server needed to generate the document
+  - Tap-to-enlarge PDF image preview (pdf.js) with zoom and download, for phones and tablets where embedded PDFs don’t work
+  - Email panel with To / Cc / Bcc recipients, editable subject and message, and the PDF attached, sent through a serverless function and Resend
+  - Server-side protections on the email endpoint: approved recipient domains, PDF and size validation, same-origin check, and per-IP rate limiting
+  - Installable PWA that works offline, with drafts autosaved to the device (IndexedDB) so no work is lost
+  - Submitted inspections upload to Supabase when online, with insert-only row-level security and duplicate-safe sync
+  - Custom branding, with the logo used for all app icons and a blue colour scheme taken from it
+  - Unit-tested business logic (113 tests) and type-aware linting
+  - Fully responsive, with CI-ready deployment on Vercel
+- **Live:** https://inspect-drop.vercel.app
+
+
+### 🪪 RIOT ID System (2026) — Internal Project
+Employee ID Card Generation & Management System (Internal Use Only)
+
+- **Description:** An internal system for managing employee records and generating official company ID cards, covering signature capture, photo collection, and personal information encoding for all active staff.
+- **Tech Stack:** React.js + Vite (Client), Node.js (Server), MySQL, Express.js, TanStack Router
+- **Key Features:**
+  - Employee ID card generation (front and back layout)
+  - Signature capture with tablet/stylus and mouse support
+  - Employee photo capture with automatic background removal
+  - Personal information form (date of birth, address, emergency contact, etc.)
+  - Admin dashboard with real-time employee signing status
+  - CSV bulk import and ZIP export of signatures
+  - Live data sync across devices via Server-Sent Events (SSE)
+  - Employee search and filtering by name, ID, and client
+  - Role-based visibility (CEO excluded from ID issuance flow)
+  - Client/team assignment tracking per employee
+- **Repository:** Internal Company Repository
+
 
 ### 🏢 RIOT Website (2025-2026) - **Current Project**
 **Public-Facing Marketing Website for Offshore Staffing**
@@ -153,7 +194,7 @@ I'm a **Bachelor's degree holder in Computer Science** with a passion for buildi
 
 **Full Stack Development:**
 - Continuous development and enhancement of RIOT Workspace, the company's internal portal and timekeeping system built using React.js and Node.js
-- Develop and maintain features including employee timekeeping (Time In, Break, Time Out), employee profiles, salary information, role-based access control, HR announcements, and administrative security logs
+- Develop and maintain features including employee timekeeping (Time In, Break, Time Out), employee profiles, salary information, role-based access control, HR announcements, and administrative s...
 - Design, develop, test, and deploy new functionalities to improve user experience, system performance, and operational workflows
 - Maintain application security, database integrity, and system scalability
 - Developing and optimizing the RIOT Staffing corporate website to strengthen the company's online presence and attract potential clients
